@@ -1,0 +1,33 @@
+header {
+  display: table;
+  top: 0;
+  background-color: #161111;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("/images/Home-bg.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+  header .main_head {
+    display: table-row; }
+    header .main_head .title_container {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+      header .main_head .title_container .header_title {
+        display: inline-block;
+        font-size: 60px;
+        color: #FFC200;
+        text-transform: uppercase;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.1); }
+      header .main_head .title_container .header_subtitle {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        color: #028E9B;
+        top: -25px;
+        left: -150px;
+        position: relative; }
+
+/*# sourceMappingURL=main.css.map */

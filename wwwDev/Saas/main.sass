@@ -1,0 +1,39 @@
+@import "bourbon/bourbon"
+
+$bg-dark: #161111
+$bg-light: #FAFAFA
+$font-dark-main: #FFC200
+$font-dark-second: #028E9B
+$font-light-main: #222
+
+header
+	display: table
+	top: 0
+	background-color: $bg-dark
+	height: 100%
+	width: 100%
+	position: absolute
+	background-image: url("/images/Home-bg.png")
+	background-size: 100% auto
+	background-repeat: no-repeat
+	.main_head
+		display: table-row
+		.title_container
+			display: table-cell
+			vertical-align: middle
+			text-align: center
+			.header_title
+				display: inline-block
+				font-size: 60px
+				color: $font-dark-main
+				text-transform: uppercase
+				position: relative
+				background-color: rgba(0,0,0,.1)
+			.header_subtitle
+				display: block
+				text-align: center
+				font-size: 30px
+				color: $font-dark-second
+				top: -25px
+				left: -150px
+				position: relative
