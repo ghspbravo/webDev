@@ -1,0 +1,484 @@
+﻿<div class="container-fluid">
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Bootstrap <small>v3.3.7</small></h1>
+			<p>Интуитивно простой и в тоже время мощный интерфейсный фрейморк, 
+			повышающий скорость и облегчающий разработку web-приложений</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid answer-bar">
+	<div class="progress">
+		<div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<nav class="col-md-3 hidden-sm hidden-xs sidebar">
+			<ul id="sidebar" class="nav nav-stacked">
+				<li>
+					<a href="#Chapter1">Модульные сетки</a>
+				</li>
+				<li>
+					<a href="#Chapter2">Стили текста</a>
+				</li>
+				<li>
+					<a href="#Chapter3">Списки</a>
+				</li>
+				<li>
+					<a href="#Chapter4">Таблицы</a>
+				</li>
+				<li>
+					<a href="#Chapter5">Изображения</a>
+				</li>
+				<li>
+					<a href="#Chapter6">Формы</a>
+				</li>
+				<li>
+					<a href="#Chapter7">Навигация</a>
+				</li>
+				<li>
+					<a href="#Chapter8">Карусель</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="col-md-9 col-sm-12">
+			<section>
+				<div id="Chapter1" class="page-header"><h2>Модульные сетки</h2></div>
+				<p>Bootstrap характерен своей продуманной и гибкой системой модульных сеток, 
+				в основе которой лежит 12-колоночный макет.</p>
+				<div class="col-demo">
+					<div class="row">
+						<div class="col-md-3">col-md-3</div>
+						<div class="col-md-3">col-md-3</div>
+						<div class="col-md-3">col-md-3</div>
+						<div class="col-md-3">col-md-3</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">col-md-2</div>
+						<div class="col-md-6">col-md-6</div>
+						<div class="col-md-4">col-md-4</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4">col-xs-12 col-sm-6 col-md-4</div>
+						<div class="col-xs-6 col-sm-6 col-md-4">col-xs-6 col-sm-6 col-md-4</div>
+						<div class="col-xs-6 col-sm-12 col-md-4">col-xs-6 col-sm-12 col-md-4</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6">col-lg-3 col-md-6</div>
+						<div class="col-lg-3 col-md-6">col-lg-3 col-md-6</div>
+						<div class="col-lg-3 col-md-6">col-lg-3 col-md-6</div>
+						<div class="col-lg-3 col-md-6">col-lg-3 col-md-6</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-1">col-md-4 col-md-offset-1</div>
+						<div class="col-md-4 col-md-offset-3">col-md-4 col-md-offset-3</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-push-8">col-md-push-8 = сдвиг вправо</div>
+						<div class="col-md-4 hidden-sm">col-md-4</div>
+						<div class="col-md-4 col-md-pull-8">col-md-pull-8 = сдвиг влево</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							Родительский
+							<div class="row">
+								<div class="col-md-6">Дочерний</div>
+								<div class="col-md-6">Дочерний</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Chapter2" class="page-header"><h2>Стили текста</h2></div>
+				<p>Boostrap содержит множество готовых стилей для оформления элементов. 
+				Применять их достаточно просто, всего то надо добавить к элементу 
+				определённый в стилях класс.</p>
+				<div class="text-style-demo">
+					<p>Для веб-страницы по-умолчанию устанавливается белый цвет фона, 
+					набор шрифтов Helvetica Neue, Helvetica, Arial и цвет текста #333.</p>
+					<div class="row">
+						<h3>Цвет текста</h3>
+						<p class="text-muted">Серый цвет text-muted</p>
+						<p class="text-primary">Основной текст text-primary</p>
+						<p class="text-success">Цвет для сообщения об успехе text-success</p>
+						<p class="text-info">Цвет для информации text-info</p>
+						<p class="text-warning">Цвет для предупреждений text-warning</p>
+						<p class="text-danger">Цвет для сообщений об ошибках text-danger</p>
+					</div>
+					<div class="row">
+						<h3>Цвет фона</h3>
+						<p class="bg-primary">Основной текст bg-primary</p>
+						<p class="bg-success">Цвет для сообщения об успехе bg-success</p>
+						<p class="bg-info">Цвет для информации bg-info</p>
+						<p class="bg-warning">Цвет для предупреждений bg-warning</p>
+						<p class="bg-danger">Цвет для сообщений об ошибках bg-danger</p>
+					</div>
+					<div class="row">
+						<h3>Выделение абзаца и выравние текста</h3>
+						<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet purus vitae mauris tempus dignissim. Pellentesque nunc nunc, condimentum eu augue eu, ullamcorper efficitur felis. Maecenas sagittis efficitur cursus. Aenean enim magna, dapibus vel nunc vel, semper rutrum ligula. Nullam placerat turpis sit amet est egestas consectetur. Quisque cursus, lorem a pharetra blandit, erat nisi dapibus diam, non elementum libero est nec tellus. Pellentesque ultrices odio vitae elit condimentum eleifend. Sed tortor nulla, ultricies ut venenatis porttitor, mattis tincidunt diam. Nulla vel viverra est. Maecenas vitae condimentum urna. Phasellus ut efficitur felis, non faucibus lorem. Praesent varius libero in sapien efficitur euismod. Pellentesque bibendum ante sed nisi hendrerit, in posuere odio tristique. Quisque volutpat eros velit, ut placerat augue sodales et.</p>
+						<p class="lead">Sed et felis metus. Sed et venenatis ex. Etiam viverra sapien at viverra condimentum. Quisque dignissim facilisis sagittis. Curabitur sit amet lectus ac turpis facilisis vestibulum ut eu est. Phasellus viverra ligula sit amet elit vestibulum consequat. Praesent at massa nec mi bibendum mattis. Nam lobortis eros id elementum tincidunt</p>
+						<p class="text-center">Ut condimentum congue dictum. Duis tortor leo, tempus ut risus a, venenatis lobortis erat. Nulla porta scelerisque metus, in elementum mauris sodales ac. Vivamus pellentesque sed purus in bibendum. Proin sit amet ipsum malesuada augue semper molestie. Mauris eu eros non mauris suscipit blandit. Sed sodales dapibus tellus, a dapibus nulla porttitor porta. Suspendisse ornare leo euismod ante fringilla facilisis. Morbi lorem ante, pellentesque vitae luctus in, tristique non mauris. Proin gravida leo ac ligula porta, vel auctor libero viverra. Proin tempus massa nec urna vestibulum lacinia.</p>
+						<p class="text-right">Donec sapien erat, eleifend sed eros quis, pharetra commodo lorem. In eget sodales justo, at molestie mi. Pellentesque eu libero est. Suspendisse tempus fermentum nisi in consequat. Etiam mollis ipsum eget imperdiet vehicula. Etiam diam ex, sodales ac aliquam ac, mollis at est. Sed non rutrum nunc. Quisque vitae pretium est. Integer luctus nunc luctus est placerat, ac euismod purus placerat.</p>
+						<p class="text-justify">Morbi porta euismod nulla, id lacinia leo euismod ut. Proin non purus sit amet urna varius dapibus. Donec eleifend tortor aliquet, venenatis sapien id, ultricies ante. Sed eu ligula nec purus suscipit tempus convallis ut mauris. Morbi pulvinar, quam id sollicitudin aliquet, nibh tellus scelerisque felis, a finibus nisi nibh eget diam. Donec eu nisl nec ante dignissim dignissim. Mauris sed egestas urna, ut varius massa. Fusce eu malesuada sapien, sed tempor lectus. Duis efficitur metus ut nisi dapibus, sed vulputate orci cursus.</p>
+					</div>
+				</div>
+				<div id="Chapter3" class="page-header"><h2>Списки</h2></div>
+				<div class="lists-demo">
+					<div class="row">
+						<h3>Нумерованный</h3>
+						<ul>
+							<li>Donec gravida urna vel mauris tristique, sit amet tristique orci euismod</li>
+							<li>Curabitur dignissim felis vel interdum sodales</li>
+							<li>Aenean efficitur nisi vel eros vestibulum dignissim</li>
+						</ul>
+						<h3>Маркированный</h3>
+						<ol>
+							<li>Ut elementum enim eu dui vulputate, nec vehicula turpis dapibus</li>
+							<li>Vestibulum semper lorem eu quam accumsan laoreet</li>
+						</ol>
+						<h3>Без стиля .list-unstyled</h3>
+						<ul class="list-unstyled">
+							<li>Aenean eu augue tempor, porttitor turpis a, laoreet erat</li>
+							<li>Aliquam volutpat arcu sed libero maximus faucibus</li>
+							<li>Quisque facilisis nunc vel lacus interdum, eget placerat leo egestas</li>
+						</ul>
+						<h3>В строку .list-inline</h3>
+						<ul class="list-inline">
+							<li>Ut</li>
+							<li>Cras</li>
+							<li>Nulla</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Chapter4" class="page-header"><h2>Таблицы</h2></div>
+				<div class="table-demo">
+					<h3>Простая таблица</h3>
+					<table>
+						 <thead>
+							<tr>
+								<th>День недели</th><th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th><th>Суббота</th><th>Воскресенье</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Матан</td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr>
+								<td>Программирование</td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td>
+							</tr>
+							<tr>
+								<td>Физкультура</td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>.table</h3>
+					<table class="table">
+						 <thead>
+							<tr>
+								<th>День недели</th><th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th><th>Суббота</th><th>Воскресенье</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Матан</td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr>
+								<td>Программирование</td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td>
+							</tr>
+							<tr>
+								<td>Физкультура</td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>table table-striped table-bordered</h3>
+					<table class="table table-striped table-bordered">
+						 <thead>
+							<tr>
+								<th>День недели</th><th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th><th>Суббота</th><th>Воскресенье</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Матан</td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr>
+								<td>Программирование</td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td>
+							</tr>
+							<tr>
+								<td>Физкультура</td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>table table-hover table-responsive</h3>
+					<div class="table-responsive">
+						<table class="table table-hover">
+							 <thead>
+								<tr>
+									<th>День недели</th><th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th><th>Суббота</th><th>Воскресенье</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="info">
+									<td>Матан</td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td>
+								</tr>
+								<tr>
+									<td class="danger">Программирование</td><td class="warning"><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td class="active"><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td>
+								</tr>
+								<tr>
+									<td>Физкультура</td><td class="success"><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-remove"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div id="Chapter5" class="page-header"><h2>Изображения</h2></div>
+				<div class="images-demo">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">img-rounded img-responsive</div>
+								<div class="panel-body"><img class="img-rounded img-responsive" src="images/cat.jpeg" alt="cat"></div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">img-circle</div>
+								<div class="panel-body"><img class="img-circle" src="images/cat.jpeg" alt="cat"></div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">img-thumbnail</div>
+								<div class="panel-body"><img class="img-thumbnail" src="images/cat.jpeg" alt="cat"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="Chapter6" class="page-header"><h2>Формы</h2></div>
+				<div class="form-demo">
+					<h3>В одну линию</h3>
+					<form class="form-inline" role="form">
+						<div class="input-group">
+							<span class="input-group-addon">@@</span>
+							<input type="email" class="form-control" placeholder="Username" required="">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="password">
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Запомнить меня
+							</label>
+						</div>
+						<button type="submit" class="btn btn-default">Войти</button>
+					</form>
+					<hr/>
+					<h3>По горизонтали</h3>
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control input-lg" id="inputEmail3" placeholder="Email" required="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">Пароль</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Запомнить меня
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-primary">Войти</button>
+							</div>
+						</div>
+					</form>
+					<hr>
+					<h3>Элементы форм</h3>
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									Первая опция
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="radio">
+								<label>
+									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+									Первая опция
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+									Вторая опция
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="checkbox-inline">
+								<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+							</label>
+							<label class="checkbox-inline">
+								<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+							</label>
+						</div>
+						<div class="form-group">
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+							<input class="form-control" id="disabledInput" type="text" placeholder="Не ввести..." disabled>
+						</div>
+						<div class="form-group">
+							<div class="form-group has-success has-feedback">
+								<label class="control-label" for="inputSuccess2">Успешный ввод</label>
+								<input type="text" class="form-control" id="inputSuccess2">
+								<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+							</div>
+							<div class="form-group has-warning has-feedback">
+								<label class="control-label" for="inputWarning2">Ввод с предупреждением</label>
+								<input type="text" class="form-control" id="inputWarning2">
+								<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+							</div>
+							<div class="form-group has-error has-feedback">
+								<label class="control-label" for="inputError2">Ввод с ошибкой</label>
+								<input type="text" class="form-control" id="inputError2">
+								<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div id="Chapter7" class="page-header"><h2>Навигация</h2></div>
+				<div class="navigation-demo">
+					<h3>Навигация вкладками</h3>
+					nav nav-tabs
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<ul class="nav nav-tabs">
+								<li role="presentation" class="active"><a role="tab" data-toggle="tab" href="#tab1">Главная</a></li>
+								<li role="presentation"><a role="tab" data-toggle="tab" href="#tab2">Профиль</a></li>
+								<li role="presentation"><a role="tab" data-toggle="tab" href="#tab3">Сообщение <span class="badge">10</span></a></li>
+							</ul>
+						</div>
+						<div class="panel-body">
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+									Phasellus at dui a lectus tempus malesuada.
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab2">
+									Quisque nulla risus, congue maximus iaculis in, cursus non felis.
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="tab3">
+									Vestibulum orci ex, interdum sit amet congue eu, viverra ac nisi.
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3>Навигация кнопками</h3>
+					nav nav-pills nav-stacked
+					<div class="panel panel-default">
+						<div class="panel-header">
+							<ul class="nav nav-pills nav-stacked">
+								<li class="active"><a href="#">Главная</a></li>
+								<li><a href="#">Профиль</a></li>
+								<li><a href="#">Сообщение</a></li>
+							</ul>
+						</div>
+						<div class="panel-body"></div>
+					</div>
+					<hr>
+					<div class="panel panel-default">
+						<nav class="navbar navbar-inverse">
+							<div>
+								<div class="navbar-header">
+									<a href="#" class="navbar-brand">navbar-brand</a>
+								</div>
+								<div class="navbar-collapse collapse">
+									<ul class="nav navbar-nav">
+										<li><a href="#">Главная</a></li>
+										<li><a href="#">Библиотека</a></li>
+										<li><a href="#">Данные</a></li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<h3>Маршрут</h3>
+					<div class="panel panel-default">
+						<div class="panel-header">
+							<ol class="breadcrumb">
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Библиотека</a></li>
+								<li class="active">Данные</li>
+							</ol>
+						</div>
+					</div>
+					<h3>Навигация по страницам</h3>
+					<div class="panel panel-default">
+						<div class="panel-body"></div>
+						<div class="panel-footer">
+							<ul class="pagination">
+								<li><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<ul class="pager">
+						<li class="previous"><a href="#">&larr; Предыдущая</a></li>
+						<li class="next disabled"><a href="#">Следующая &rarr;</a></li>
+					</ul>
+				</div>
+				<div id="Chapter8" class="page-header"><h2>Карусель</h2></div>
+				<div class="carousel-demo">
+					<div id="carousel-demo" class="carousel slide" data-ride="carousel" data-interval="6000">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-demo" data-slide-to="1"></li>
+							<li data-target="#carousel-demo" data-slide-to="2"></li>
+							<li data-target="#carousel-demo" data-slide-to="3"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="~/images/slide1.jpg" class="img-responsive">
+								<div class="carousel-caption" role="option"><p>Описание картинки</p></div>
+							</div>
+							<div class="item"><img src="~/images/slide2.jpg" class="img-responsive"></div>
+							<div class="item"><img src="~/images/slide3.png" class="img-responsive"></div>
+							<div class="item"><img src="~/images/slide4.jpg" class="img-responsive"></div>
+						</div>
+						<a class="left carousel-control" href="#carousel-demo" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-demo" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>

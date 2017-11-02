@@ -1,0 +1,39 @@
+body {
+  min-width: 320px; }
+
+.row {
+  padding-bottom: 20px; }
+
+.col-demo .row [class|=col] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+  text-align: center; }
+
+.text-style-demo p {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.table-demo span {
+  padding-left: 50%;
+  left: -12px; }
+
+.sidebar .nav > .active > a {
+  color: #563d7c;
+  font-weight: 600; }
+
+#sidebar.affix {
+  top: 70px; }
+
+.answer-bar {
+  display: table;
+  table-layout: fixed;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+  content: "";
+  overflow: hidden; }
+
+/*# sourceMappingURL=style.css.map */
